@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>HTML 문서에 배경색 지정하기 예제</title>
+ </head>
+   <body>
+     <form>
+
+       <p>아이디 : <input type="text" name="id" size="20" value=""></p>
+       <input type="hidden" name="name" value="JJW">
+       <p>비밀번호 : <input type="password" name="pswd" size="20" value=""></p>
+
+       <p>성별을 선택해 주세요</p>
+       <input type="radio" name="gender" value="man">남자&nbsp;
+       <input type="radio" name="gender" value="woman">여자&nbsp;
+
+       <input type="checkbox" name="color" value="red" checked>빨간색 &nbsp;
+       <input type="checkbox" name="color" value="blue">파란색&nbsp;
+
+       <p>가장 좋아하는 색상은 어떤 것입니까?</p>
+       <select name="color">
+         <option value="red">빨간색</option>
+         <option value="blue">파란색</option>
+         <option value="white">흰색</option>
+         <option value="black">검은색</option>
+         <option value="gray">회색</option>
+       </select>
+
+       <select name="color2" size="4" multiple>
+         <option value="red">빨간색</option>
+         <option value="blue">파란색</option>
+         <option value="white">흰색</option>
+         <option value="black">검은색</option>
+         <option value="gray">회색</option>
+         </select>
+
+       <p>value 값을 지정하지 않은 경우의 전송/취소 기본 버튼</p>
+       <p><hr></p>
+       <input type="submit" name="submit">&nbsp;&nbsp;
+       <input type="reset" name="reset">
+       <p><hr></p>
+
+       <p>value 값을 지정한 경우의 전송/취소 기본 버튼</p>
+       <input type="submit" name="submit" value="전송">&nbsp;&nbsp;
+       <input type="reset" name="reset" value="취소">
+
+       <p>이전글/다음글 이동할 경우에는 아래의 버튼을 클릭해 주세요</p>
+       <input type="button" name="prv" value= "이전글">&nbsp;&nbsp;
+       <input type="button" name="next" value= "다음글">
+
+       <p>이전글/다음글 이동할 경우에는 아래의 버튼을 클릭해 주세요</p>
+       <input type="image" name="prv" src="bt_back.gif"                                 align="middle">&nbsp;&nbsp;
+       <input type="image" name="next" src="bt_forward.gif"                                         align="middle">
+
+       <from name="fileupload" method="post" enctype="multipart/form-data">
+
+       <p>전송할 파일을 선택해 주세요.</p>
+       <input type="file" name="files" size="30">
+       <p><hr></p>
+
+       <p>자기소개서</p>
+       <textarea name="content" rows="5" cols="50">
+        간략하게 자기 자신을 소개해 주세요.
+       </textarea>
+
+     </form>    
+   </body>
+</html>
